@@ -16,7 +16,7 @@ angular.module('stockDogApp').service 'WatchlistService', ->
 			else []
 			nextId: localStorage['StockDog.nextId'] if true then parseInt			(localStorage['StockDog.nextId'])
 			else 0
-		return			
+		return
 	saveModel = ->
 		localStorage['StockDog.watchlists'] = JSON.stringify(Model.watchlists)
 	localStorage['StockDog.nextId'] = Model.nextId
